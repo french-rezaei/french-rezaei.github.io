@@ -3,247 +3,688 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>فاطمه رضایی | مدرس زبان فرانسه در رفسنجان</title>
+
+<title>فاطمه رضایی | مدرس زبان فرانسه</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-body {
-    margin: 0;
-    font-family: Tahoma, sans-serif;
-    background: #f8f5f2;
-    color: #333;
-    text-align: center;
-    line-height: 2;
+*{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+--navy:#101e38;
+--gold:#c5ad82;
+--gray:#f5f7fa;
 }
 
-.container {
-    max-width: 850px;
-    margin: 30px auto;
-    padding: 25px;
+body{
+font-family:Vazirmatn,sans-serif;
+color:#26344a;
+line-height:2;
 }
 
-.profile {
-    background: white;
-    border-radius: 25px;
-    padding: 30px;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+a{text-decoration:none;color:inherit}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
 }
 
-.profile img {
-    width: 190px;
-    height: 190px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #b58a9b;
-    margin-bottom: 15px;
+header{
+background:white;
+border-bottom:1px solid #eee;
+position:sticky;
+top:0;
+z-index:10;
 }
 
-h1 {
-    color: #75445d;
-    font-size: 28px;
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
 }
 
-h2 {
-    color: #75445d;
-    margin-top: 30px;
+.logo{
+font-weight:800;
+color:var(--navy);
+font-size:20px;
 }
 
-.subtitle {
-    color: #987087;
-    font-size: 18px;
+.logo span{color:var(--gold)}
+
+.links{
+display:flex;
+gap:23px;
+font-size:13px;
 }
 
-.section {
-    background: white;
-    margin-top: 20px;
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+.links a:hover{color:var(--gold)}
+
+.navbtn{
+background:var(--navy);
+color:white;
+padding:8px 20px;
+border-radius:4px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+/* HERO */
+
+.hero{
+background:var(--navy);
+color:white;
+padding:65px 0;
 }
 
-li {
-    padding: 5px;
+.hero-content{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:35px;
 }
 
-.course {
-    background: #f7edf1;
-    border-radius: 15px;
-    padding: 12px;
-    margin: 12px 0;
+.profile{
+width:175px;
+height:210px;
+flex-shrink:0;
+border:1px solid var(--gold);
+padding:6px;
+border-radius:8px;
 }
 
-.contact {
-    background: #75445d;
-    color: white;
-    border-radius: 20px;
-    padding: 25px;
-    margin-top: 20px;
+.profile img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:5px;
 }
 
-.contact a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.hero-text{flex:1}
+
+.eyebrow{
+color:var(--gold);
+font-size:12px;
+letter-spacing:2px;
 }
 
-button {
-    background: white;
-    color: #75445d;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 25px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 10px;
+.hero h1{
+font-size:34px;
+margin:10px 0;
 }
 
-footer {
-    margin-top: 25px;
-    color: #888;
-    font-size: 13px;
+.hero h1 span{color:var(--gold)}
+
+.hero p{
+color:#c5cedc;
+font-size:14px;
 }
+
+.buttons{
+display:flex;
+gap:12px;
+margin-top:22px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:9px 23px;
+border-radius:4px;
+font-size:13px;
+}
+
+.gold{
+background:var(--gold);
+color:var(--navy);
+}
+
+.outline{
+border:1px solid #9ba9bc;
+color:white;
+}
+
+/* GENERAL */
+
+section{padding:75px 0}
+
+.title{
+text-align:center;
+margin-bottom:40px;
+}
+
+.title small{
+color:var(--gold);
+letter-spacing:2px;
+}
+
+.title h2{
+color:var(--navy);
+font-size:27px;
+}
+
+.title p{
+color:#8993a2;
+font-size:13px;
+}
+
+.about{
+max-width:850px;
+margin:auto;
+text-align:center;
+}
+
+.about p{
+font-size:14px;
+color:#667286;
+}
+
+.credentials{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:13px;
+margin-top:30px;
+}
+
+.credential{
+background:var(--gray);
+border-right:3px solid var(--gold);
+padding:14px;
+text-align:right;
+font-size:13px;
+}
+
+/* COURSES */
+
+.courses{background:var(--gray)}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.card{
+background:white;
+padding:30px 20px;
+text-align:center;
+border:1px solid #edf0f4;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+border-color:var(--gold);
+}
+
+.card .icon{
+font-size:30px;
+color:var(--gold);
+}
+
+.card h3{
+color:var(--navy);
+font-size:18px;
+}
+
+.card p{
+font-size:13px;
+color:#8993a2;
+margin:10px 0;
+}
+
+.card strong{
+color:#b69c6c;
+font-size:13px;
+}
+
+/* LEVELS */
+
+.levels{
+background:var(--navy);
+color:white;
+text-align:center;
+}
+
+.levels h2{font-size:25px}
+
+.levels p{
+color:#c5cedc;
+font-size:14px;
+}
+
+.level-list{
+display:flex;
+justify-content:center;
+gap:20px;
+margin-top:30px;
+}
+
+.level-list span{
+border:1px solid var(--gold);
+color:var(--gold);
+padding:8px 30px;
+}
+
+/* COMMENTS */
+
+.comments{background:var(--gray)}
+
+.comment{
+background:white;
+padding:25px;
+border:1px solid #eee;
+font-size:13px;
+}
+
+.stars{color:var(--gold)}
+
+/* QUESTIONS */
+
+.question{
+max-width:650px;
+margin:auto;
+background:var(--gray);
+padding:30px;
+}
+
+input,textarea{
+width:100%;
+padding:13px;
+margin-bottom:13px;
+border:1px solid #e2e5eb;
+font-family:inherit;
+outline:none;
+}
+
+textarea{
+height:120px;
+resize:vertical;
+}
+
+button{
+width:100%;
+padding:13px;
+background:var(--navy);
+color:white;
+border:0;
+font-family:inherit;
+cursor:pointer;
+}
+
+/* CONTACT */
+
+.contact{
+background:var(--navy);
+color:white;
+text-align:center;
+}
+
+.contact .title h2{color:white}
+
+.contact p{
+color:#c5cedc;
+font-size:14px;
+}
+
+.contact a{color:var(--gold)}
+
+.social{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-top:25px;
+}
+
+.social a{
+border:1px solid #78869b;
+padding:8px 22px;
+border-radius:4px;
+}
+
+footer{
+background:#091426;
+color:#aab3c1;
+text-align:center;
+padding:20px;
+font-size:12px;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+.links{display:none}
+
+.hero{padding:45px 0}
+
+.hero-content{
+flex-direction:row;
+gap:15px;
+align-items:center;
+}
+
+.profile{
+width:115px;
+height:145px;
+}
+
+.hero h1{font-size:23px}
+
+.hero p{font-size:11px}
+
+.eyebrow{font-size:9px}
+
+.btn{
+padding:8px 12px;
+font-size:11px;
+}
+
+.credentials,.grid{
+grid-template-columns:1fr;
+}
+
+section{padding:55px 0}
+
+.level-list{gap:8px}
+
+.level-list span{padding:7px 18px}
+
+}
+
+@media(max-width:380px){
+.profile{width:95px;height:125px}
+.hero h1{font-size:20px}
+}
+
 </style>
 </head>
 
 <body>
 
+<header>
 <div class="container">
+<nav>
 
-        <style>
-.profile-photo {
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #ffffff;
-    outline: 2px solid #192b50;
-    box-shadow: 0 4px 15px rgba(10, 25, 60, 0.4);
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    transition: 0.3s ease;
-}
+<div class="logo">FATEMEH <span>REZAEI.</span></div>
 
-.profile-photo:hover {
-    transform: scale(1.12);
-    box-shadow: 0 0 15px #8faadc;
-}
-</style>
+<div class="links">
+<a href="#about">درباره من</a>
+<a href="#courses">دوره‌ها</a>
+<a href="#comments">نظرات</a>
+<a href="#question">پرسش و پاسخ</a>
+<a href="#contact">تماس</a>
+</div>
 
-<img src="fateme.jpg.png" alt="Fateme" class="profile-photo">
-💙 ترکیب رنگ:
+<a href="#contact" class="navbtn">ثبت نام</a>
 
-        <h1>فاطمه رضایی</h1>
+</nav>
+</div>
+</header>
 
-        <div class="subtitle">
-            مدرس زبان فرانسه در رفسنجان 🇫🇷
-        </div>
 
-        <p>
-            یادگیری زبان فرانسه را با روشی اصولی، جذاب و به‌روز تجربه کنید.
-        </p>
+<!-- INTRO -->
 
-    </div>
+<div class="hero">
+<div class="container hero-content">
 
-    <!-- رزومه -->
-    <div class="section">
+<div class="profile">
+<img src="fateme.jpg.png" alt="فاطمه رضایی">
+</div>
 
-        <h2>🎓 رزومه تحصیلی و آموزشی</h2>
+<div class="hero-text">
 
-        <ul>
-            <li>کارشناس زبان و ادبیات فرانسه</li>
-            <li>فارغ‌التحصیل دانشگاه فردوسی مشهد</li>
-            <li>رتبه ۹ کنکور کارشناسی ارشد مترجمی فرانسه ۱۴۰۵</li>
-            <li>دارای مدرک رسمی تربیت مدرس زبان فرانسه (TTC)</li>
-        </ul>
+<div class="eyebrow">FRENCH LANGUAGE EDUCATION</div>
 
-    </div>
+<h1>
+فاطمه رضایی<br>
+<span>مدرس زبان فرانسه در رفسنجان</span>
+</h1>
 
-    <!-- کلاس ها -->
-    <div class="section">
+<p>
+کارشناس زبان و ادبیات فرانسه<br>
+آموزش تخصصی از مبتدی تا پیشرفته برای تمامی سنین
+</p>
 
-        <h2>📚 برگزاری کلاس‌های زبان فرانسه</h2>
-
-        <p>
-            آموزش زبان فرانسه از سطح مبتدی تا پیشرفته
-            <br>
-            سطوح A1 تا B2
-        </p>
-
-        <ul>
-            <li>✅ آموزش برای تمامی سنین</li>
-            <li>✅ استفاده از جدیدترین متدهای آموزشی روز دنیا</li>
-            <li>✅ آموزش اصولی مهارت‌های چهارگانه زبان</li>
-        </ul>
-
-    </div>
-
-    <!-- منابع آموزشی -->
-    <div class="section">
-
-        <h2>📖 منابع آموزشی کلاس‌ها</h2>
-
-        <div class="course">
-            <strong>👩 بزرگسالان</strong>
-            <br>
-            Édito
-        </div>
-
-        <div class="course">
-            <strong>🧑 نوجوانان</strong>
-            <br>
-            Nouvelle Génération
-        </div>
-
-        <div class="course">
-            <strong>🧒 کودکان</strong>
-            <br>
-            Bonne Nouvelle
-        </div>
-
-    </div>
-
-    <!-- تماس -->
-    <div class="contact">
-
-        <h2 style="color:white;">📞 ارتباط و مشاوره</h2>
-
-        <p>
-            جهت اطلاع از کلاس‌ها، هزینه دوره‌ها و دریافت مشاوره
-            با من در ارتباط باشید.
-        </p>
-
-        <p>
-            شماره تماس:
-            <br>
-            <a href="tel:09045519325">
-                ۰۹۰۴۵۵۱۹۳۲۵
-            </a>
-        </p>
-
-        <p>
-            اینستاگرام و روبیکا:
-            <br>
-            <a href="https://instagram.com/french_rezaei">
-                @french_rezaei
-            </a>
-        </p>
-
-        <button onclick="window.location.href='tel:09045519325'">
-            تماس و مشاوره
-        </button>
-
-    </div>
-
-    <footer>
-        فاطمه رضایی | مدرس زبان فرانسه در رفسنجان 🇫🇷
-    </footer>
+<div class="buttons">
+<a href="tel:09045519325" class="btn gold">تماس و ثبت نام</a>
+<a href="#about" class="btn outline">درباره من</a>
+</div>
 
 </div>
+</div>
+</div>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+<div class="container">
+
+<div class="title">
+<small>ABOUT ME</small>
+<h2>درباره مدرس</h2>
+<p>یادگیری حرفه‌ای زبان فرانسه با متدهای روز دنیا</p>
+</div>
+
+<div class="about">
+
+<p>
+من فاطمه رضایی، مدرس زبان فرانسه در رفسنجان هستم.
+با تکیه بر دانش آکادمیک و روش‌های نوین آموزشی،
+تلاش می‌کنم مسیر یادگیری زبان فرانسه را برای
+زبان‌آموزان در تمامی سنین جذاب و اثربخش کنم.
+</p>
+
+<div class="credentials">
+
+<div class="credential">کارشناس زبان و ادبیات فرانسه</div>
+
+<div class="credential">فارغ‌التحصیل دانشگاه فردوسی مشهد</div>
+
+<div class="credential">رتبه ۹ کنکور ارشد مترجمی فرانسه</div>
+
+<div class="credential">دارای مدرک رسمی تربیت مدرس زبان فرانسه TTC</div>
+
+<div class="credential">برگزارکننده دوره‌های تخصصی زبان فرانسه در رفسنجان</div>
+
+<div class="credential">آموزش با جدیدترین متدهای روز دنیا</div>
+
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- COURSES -->
+
+<section class="courses" id="courses">
+<div class="container">
+
+<div class="title">
+<small>OUR COURSES</small>
+<h2>دوره‌های آموزشی</h2>
+<p>آموزش تخصصی متناسب با سن و نیاز شما</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="icon">✦</div>
+<h3>بزرگسالان</h3>
+<p>آموزش زبان فرانسه با تمرکز بر مهارت‌های چهارگانه</p>
+<strong>متد Édito</strong>
+</div>
+
+<div class="card">
+<div class="icon">✧</div>
+<h3>نوجوانان</h3>
+<p>یادگیری جذاب و هدفمند متناسب با نوجوانان</p>
+<strong>متد Nouvelle Génération</strong>
+</div>
+
+<div class="card">
+<div class="icon">❋</div>
+<h3>کودکان</h3>
+<p>آموزش با بازی، سرگرمی و فعالیت‌های آموزشی</p>
+<strong>متد Bonne Nouvelle</strong>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- LEVELS -->
+
+<section class="levels">
+<div class="container">
+
+<h2>از مبتدی تا پیشرفته</h2>
+<p>دوره‌های آموزشی از سطح A1 تا B2 برای تمامی سنین</p>
+
+<div class="level-list">
+<span>A1</span>
+<span>A2</span>
+<span>B1</span>
+<span>B2</span>
+</div>
+
+</div>
+</section>
+
+
+<!-- COMMENTS -->
+
+<section class="comments" id="comments">
+<div class="container">
+
+<div class="title">
+<small>TESTIMONIALS</small>
+<h2>نظرات زبان‌آموزان</h2>
+<p>تجربه یادگیری زبان فرانسه</p>
+</div>
+
+<div class="grid">
+
+<div class="comment">
+<div class="stars">★★★★★</div>
+<p>نظرات زبان‌آموزان در این قسمت نمایش داده می‌شود.</p>
+</div>
+
+<div class="comment">
+<div class="stars">★★★★★</div>
+<p>تجربه‌ها و دیدگاه‌های شما برای ما ارزشمند است.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- QUESTIONS -->
+
+<section id="question">
+<div class="container">
+
+<div class="title">
+<small>ASK YOUR TEACHER</small>
+<h2>پرسش مستقیم از مدرس</h2>
+<p>سؤال خود را بنویسید تا مستقیماً برای مدرس ارسال شود.</p>
+</div>
+
+<div class="question">
+
+<form onsubmit="sendQuestion(event)">
+
+<input id="name" placeholder="نام و نام خانوادگی" required>
+
+<input id="phone" type="tel" placeholder="شماره تماس" required>
+
+<textarea id="message" placeholder="متن سؤال شما..." required></textarea>
+
+<button type="submit">ارسال پرسش</button>
+
+</form>
+
+</div>
+</div>
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+<div class="container">
+
+<div class="title">
+<small>CONTACT ME</small>
+<h2>شروع مسیر یادگیری شما</h2>
+<p>جهت ثبت نام و اطلاعات بیشتر تماس بگیرید یا پیام دهید.</p>
+</div>
+
+<p>
+شماره تماس:
+<a href="tel:09045519325">۰۹۰۴۵۵۱۹۳۲۵</a>
+</p>
+
+<br>
+
+<p>اینستاگرام و روبیکا: @french_rezaei</p>
+
+<br>
+
+<p>محل برگزاری کلاس‌ها: آموزشگاه زبان کیهان</p>
+
+<p>رفسنجان / بلوار امام علی / خیابان شهید خراسانی</p>
+
+<div class="social">
+
+<a href="tel:09045519325">تماس مستقیم</a>
+
+<a href="https://www.instagram.com/french_rezaei/" target="_blank">Instagram</a>
+
+<a href="https://rubika.ir/french_rezaei" target="_blank">Rubika</a>
+
+<a href="https://wa.me/989045519325" target="_blank">WhatsApp</a>
+
+</div>
+
+</div>
+</section>
+
+
+<footer>
+© 2026 Fatemeh Rezaei | French Language Education
+<br>
+تمامی حقوق محفوظ است.
+</footer>
+
+
+<script>
+
+function sendQuestion(e){
+
+e.preventDefault();
+
+let name=document.getElementById("name").value;
+let phone=document.getElementById("phone").value;
+let message=document.getElementById("message").value;
+
+let text=
+"سلام خانم رضایی 🌷"+
+"\nنام: "+name+
+"\nشماره تماس: "+phone+
+"\nسؤال: "+message;
+
+window.open(
+"https://wa.me/989045519325?text="+encodeURIComponent(text),
+"_blank"
+);
+
+}
+
+</script>
 
 </body>
 </html>
