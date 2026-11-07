@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>فاطمه رضایی | مدرس زبان فرانسه</title>
+<title>فاطمه رضایی | مدرس زبان فرانسه در رفسنجان</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
 :root{
 --navy:#101e38;
@@ -17,13 +23,20 @@
 --gray:#f5f7fa;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
-font-family:Vazirmatn,sans-serif;
+font-family:'Vazirmatn',sans-serif;
 color:#26344a;
 line-height:2;
 }
 
-a{text-decoration:none;color:inherit}
+a{
+text-decoration:none;
+color:inherit;
+}
 
 .container{
 width:90%;
@@ -31,12 +44,14 @@ max-width:1100px;
 margin:auto;
 }
 
+/* HEADER */
+
 header{
 background:white;
 border-bottom:1px solid #eee;
 position:sticky;
 top:0;
-z-index:10;
+z-index:100;
 }
 
 nav{
@@ -47,29 +62,34 @@ padding:15px 0;
 }
 
 .logo{
+font-size:20px;
 font-weight:800;
 color:var(--navy);
-font-size:20px;
 }
 
-.logo span{color:var(--gold)}
+.logo span{
+color:var(--gold);
+}
 
 .links{
 display:flex;
-gap:23px;
+gap:20px;
 font-size:13px;
 }
 
-.links a:hover{color:var(--gold)}
+.links a:hover{
+color:var(--gold);
+}
 
 .navbtn{
 background:var(--navy);
 color:white;
 padding:8px 20px;
 border-radius:4px;
+font-size:13px;
 }
 
-/* HERO */
+/* INTRO */
 
 .hero{
 background:var(--navy);
@@ -100,7 +120,9 @@ object-fit:cover;
 border-radius:5px;
 }
 
-.hero-text{flex:1}
+.hero-text{
+flex:1;
+}
 
 .eyebrow{
 color:var(--gold);
@@ -111,9 +133,13 @@ letter-spacing:2px;
 .hero h1{
 font-size:34px;
 margin:10px 0;
+line-height:1.8;
 }
 
-.hero h1 span{color:var(--gold)}
+.hero h1 span{
+color:var(--gold);
+font-size:21px;
+}
 
 .hero p{
 color:#c5cedc;
@@ -145,7 +171,9 @@ color:white;
 
 /* GENERAL */
 
-section{padding:75px 0}
+section{
+padding:75px 0;
+}
 
 .title{
 text-align:center;
@@ -154,7 +182,7 @@ margin-bottom:40px;
 
 .title small{
 color:var(--gold);
-letter-spacing:2px;
+letter-spacing:1px;
 }
 
 .title h2{
@@ -166,6 +194,8 @@ font-size:27px;
 color:#8993a2;
 font-size:13px;
 }
+
+/* ABOUT */
 
 .about{
 max-width:850px;
@@ -195,7 +225,9 @@ font-size:13px;
 
 /* COURSES */
 
-.courses{background:var(--gray)}
+.courses{
+background:var(--gray);
+}
 
 .grid{
 display:grid;
@@ -216,7 +248,7 @@ transform:translateY(-5px);
 border-color:var(--gold);
 }
 
-.card .icon{
+.icon{
 font-size:30px;
 color:var(--gold);
 }
@@ -245,7 +277,9 @@ color:white;
 text-align:center;
 }
 
-.levels h2{font-size:25px}
+.levels h2{
+font-size:25px;
+}
 
 .levels p{
 color:#c5cedc;
@@ -257,6 +291,7 @@ display:flex;
 justify-content:center;
 gap:20px;
 margin-top:30px;
+flex-wrap:wrap;
 }
 
 .level-list span{
@@ -267,7 +302,9 @@ padding:8px 30px;
 
 /* COMMENTS */
 
-.comments{background:var(--gray)}
+.comments{
+background:var(--gray);
+}
 
 .comment{
 background:white;
@@ -276,7 +313,10 @@ border:1px solid #eee;
 font-size:13px;
 }
 
-.stars{color:var(--gold)}
+.stars{
+color:var(--gold);
+font-size:18px;
+}
 
 /* QUESTIONS */
 
@@ -293,7 +333,13 @@ padding:13px;
 margin-bottom:13px;
 border:1px solid #e2e5eb;
 font-family:inherit;
+font-size:14px;
 outline:none;
+border-radius:3px;
+}
+
+input:focus,textarea:focus{
+border-color:var(--gold);
 }
 
 textarea{
@@ -308,7 +354,13 @@ background:var(--navy);
 color:white;
 border:0;
 font-family:inherit;
+font-size:14px;
 cursor:pointer;
+border-radius:3px;
+}
+
+button:hover{
+background:#243a5d;
 }
 
 /* CONTACT */
@@ -319,14 +371,18 @@ color:white;
 text-align:center;
 }
 
-.contact .title h2{color:white}
+.contact .title h2{
+color:white;
+}
 
 .contact p{
 color:#c5cedc;
 font-size:14px;
 }
 
-.contact a{color:var(--gold)}
+.contact a{
+color:var(--gold);
+}
 
 .social{
 display:flex;
@@ -340,6 +396,12 @@ margin-top:25px;
 border:1px solid #78869b;
 padding:8px 22px;
 border-radius:4px;
+font-size:13px;
+}
+
+.social a:hover{
+background:var(--gold);
+color:var(--navy);
 }
 
 footer{
@@ -354,9 +416,13 @@ font-size:12px;
 
 @media(max-width:700px){
 
-.links{display:none}
+.links{
+display:none;
+}
 
-.hero{padding:45px 0}
+.hero{
+padding:45px 0;
+}
 
 .hero-content{
 flex-direction:row;
@@ -369,11 +435,21 @@ width:115px;
 height:145px;
 }
 
-.hero h1{font-size:23px}
+.hero h1{
+font-size:23px;
+}
 
-.hero p{font-size:11px}
+.hero h1 span{
+font-size:14px;
+}
 
-.eyebrow{font-size:9px}
+.hero p{
+font-size:11px;
+}
+
+.eyebrow{
+font-size:9px;
+}
 
 .btn{
 padding:8px 12px;
@@ -384,29 +460,54 @@ font-size:11px;
 grid-template-columns:1fr;
 }
 
-section{padding:55px 0}
+section{
+padding:55px 0;
+}
 
-.level-list{gap:8px}
+.level-list{
+gap:8px;
+}
 
-.level-list span{padding:7px 18px}
+.level-list span{
+padding:7px 18px;
+}
 
 }
 
 @media(max-width:380px){
-.profile{width:95px;height:125px}
-.hero h1{font-size:20px}
+
+.profile{
+width:95px;
+height:125px;
 }
+
+.hero h1{
+font-size:19px;
+}
+
+.hero h1 span{
+font-size:12px;
+}
+
+}
+
+/* END */
 
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
 <div class="container">
+
 <nav>
 
-<div class="logo">FATEMEH <span>REZAEI.</span></div>
+<div class="logo">
+FATEMEH <span>REZAEI.</span>
+</div>
 
 <div class="links">
 <a href="#about">درباره من</a>
@@ -419,6 +520,7 @@ section{padding:55px 0}
 <a href="#contact" class="navbtn">ثبت نام</a>
 
 </nav>
+
 </div>
 </header>
 
@@ -426,6 +528,7 @@ section{padding:55px 0}
 <!-- INTRO -->
 
 <div class="hero">
+
 <div class="container hero-content">
 
 <div class="profile">
@@ -434,7 +537,9 @@ section{padding:55px 0}
 
 <div class="hero-text">
 
-<div class="eyebrow">FRENCH LANGUAGE EDUCATION</div>
+<div class="eyebrow">
+آموزش تخصصی زبان فرانسه
+</div>
 
 <h1>
 فاطمه رضایی<br>
@@ -447,23 +552,33 @@ section{padding:55px 0}
 </p>
 
 <div class="buttons">
-<a href="tel:09045519325" class="btn gold">تماس و ثبت نام</a>
-<a href="#about" class="btn outline">درباره من</a>
+
+<a href="tel:09045519325" class="btn gold">
+تماس و ثبت نام
+</a>
+
+<a href="#about" class="btn outline">
+درباره من
+</a>
+
 </div>
 
 </div>
+
 </div>
+
 </div>
 
 
 <!-- ABOUT -->
 
 <section id="about">
+
 <div class="container">
 
 <div class="title">
-<small>ABOUT ME</small>
-<h2>درباره مدرس</h2>
+<small>درباره من</small>
+<h2>آشنایی با مدرس</h2>
 <p>یادگیری حرفه‌ای زبان فرانسه با متدهای روز دنیا</p>
 </div>
 
@@ -473,193 +588,318 @@ section{padding:55px 0}
 من فاطمه رضایی، مدرس زبان فرانسه در رفسنجان هستم.
 با تکیه بر دانش آکادمیک و روش‌های نوین آموزشی،
 تلاش می‌کنم مسیر یادگیری زبان فرانسه را برای
-زبان‌آموزان در تمامی سنین جذاب و اثربخش کنم.
+زبان‌آموزان در تمامی سنین جذاب، اصولی و اثربخش کنم.
 </p>
 
 <div class="credentials">
 
-<div class="credential">کارشناس زبان و ادبیات فرانسه</div>
+<div class="credential">
+کارشناس زبان و ادبیات فرانسه
+</div>
 
-<div class="credential">فارغ‌التحصیل دانشگاه فردوسی مشهد</div>
+<div class="credential">
+فارغ‌التحصیل دانشگاه فردوسی مشهد
+</div>
 
-<div class="credential">رتبه ۹ کنکور ارشد مترجمی فرانسه</div>
+<div class="credential">
+رتبه ۹ کنکور کارشناسی ارشد مترجمی فرانسه
+</div>
 
-<div class="credential">دارای مدرک رسمی تربیت مدرس زبان فرانسه TTC</div>
+<div class="credential">
+دارای مدرک رسمی تربیت مدرس زبان فرانسه TTC
+</div>
 
-<div class="credential">برگزارکننده دوره‌های تخصصی زبان فرانسه در رفسنجان</div>
+<div class="credential">
+برگزارکننده دوره‌های تخصصی زبان فرانسه در رفسنجان
+</div>
 
-<div class="credential">آموزش با جدیدترین متدهای روز دنیا</div>
+<div class="credential">
+آموزش با جدیدترین متدهای روز دنیا
+</div>
 
 </div>
+
 </div>
+
 </div>
+
 </section>
 
 
 <!-- COURSES -->
 
 <section class="courses" id="courses">
+
 <div class="container">
 
 <div class="title">
-<small>OUR COURSES</small>
-<h2>دوره‌های آموزشی</h2>
+<small>دوره‌های آموزشی</small>
+<h2>یادگیری زبان فرانسه برای همه</h2>
 <p>آموزش تخصصی متناسب با سن و نیاز شما</p>
 </div>
 
 <div class="grid">
 
 <div class="card">
+
 <div class="icon">✦</div>
+
 <h3>بزرگسالان</h3>
-<p>آموزش زبان فرانسه با تمرکز بر مهارت‌های چهارگانه</p>
+
+<p>
+آموزش زبان فرانسه با تمرکز بر مهارت‌های چهارگانه
+</p>
+
 <strong>متد Édito</strong>
+
 </div>
 
+
 <div class="card">
+
 <div class="icon">✧</div>
+
 <h3>نوجوانان</h3>
-<p>یادگیری جذاب و هدفمند متناسب با نوجوانان</p>
+
+<p>
+یادگیری جذاب و هدفمند متناسب با نیاز نوجوانان
+</p>
+
 <strong>متد Nouvelle Génération</strong>
+
 </div>
+
 
 <div class="card">
+
 <div class="icon">❋</div>
+
 <h3>کودکان</h3>
-<p>آموزش با بازی، سرگرمی و فعالیت‌های آموزشی</p>
+
+<p>
+آموزش با بازی، سرگرمی و فعالیت‌های آموزشی
+</p>
+
 <strong>متد Bonne Nouvelle</strong>
+
 </div>
 
 </div>
+
 </div>
+
 </section>
 
 
 <!-- LEVELS -->
 
 <section class="levels">
+
 <div class="container">
 
 <h2>از مبتدی تا پیشرفته</h2>
-<p>دوره‌های آموزشی از سطح A1 تا B2 برای تمامی سنین</p>
+
+<p>
+دوره‌های آموزشی از سطح A1 تا B2 برای تمامی سنین
+</p>
 
 <div class="level-list">
+
 <span>A1</span>
 <span>A2</span>
 <span>B1</span>
 <span>B2</span>
+
 </div>
 
 </div>
+
 </section>
 
 
 <!-- COMMENTS -->
 
 <section class="comments" id="comments">
+
 <div class="container">
 
 <div class="title">
-<small>TESTIMONIALS</small>
-<h2>نظرات زبان‌آموزان</h2>
-<p>تجربه یادگیری زبان فرانسه</p>
+
+<small>نظرات زبان‌آموزان</small>
+
+<h2>تجربه یادگیری در کنار هم</h2>
+
+<p>
+دیدگاه و تجربه زبان‌آموزان برای ما ارزشمند است.
+</p>
+
 </div>
 
 <div class="grid">
 
 <div class="comment">
+
 <div class="stars">★★★★★</div>
-<p>نظرات زبان‌آموزان در این قسمت نمایش داده می‌شود.</p>
+
+<p>
+نظرات و تجربه‌های زبان‌آموزان در این قسمت نمایش داده می‌شود.
+</p>
+
 </div>
+
 
 <div class="comment">
+
 <div class="stars">★★★★★</div>
-<p>تجربه‌ها و دیدگاه‌های شما برای ما ارزشمند است.</p>
+
+<p>
+از همراهی و اعتماد شما در مسیر یادگیری زبان فرانسه سپاسگزارم.
+</p>
+
 </div>
 
 </div>
+
 </div>
+
 </section>
 
 
 <!-- QUESTIONS -->
 
 <section id="question">
+
 <div class="container">
 
 <div class="title">
-<small>ASK YOUR TEACHER</small>
-<h2>پرسش مستقیم از مدرس</h2>
-<p>سؤال خود را بنویسید تا مستقیماً برای مدرس ارسال شود.</p>
+
+<small>ارتباط با مدرس</small>
+
+<h2>پرسش و پاسخ با فاطمه رضایی</h2>
+
+<p>
+سؤال خود را بنویسید تا از طریق پیامک برای من ارسال شود.
+</p>
+
 </div>
 
 <div class="question">
 
 <form onsubmit="sendQuestion(event)">
 
-<input id="name" placeholder="نام و نام خانوادگی" required>
+<input
+type="text"
+id="name"
+placeholder="نام و نام خانوادگی"
+required
+>
 
-<input id="phone" type="tel" placeholder="شماره تماس" required>
+<input
+type="tel"
+id="phone"
+placeholder="شماره تماس شما"
+required
+>
 
-<textarea id="message" placeholder="متن سؤال شما..." required></textarea>
+<textarea
+id="message"
+placeholder="سؤال خود را اینجا بنویسید..."
+required
+></textarea>
 
-<button type="submit">ارسال پرسش</button>
+<button type="submit">
+ارسال سؤال از طریق پیامک
+</button>
 
 </form>
 
 </div>
+
 </div>
+
 </section>
 
 
 <!-- CONTACT -->
 
 <section class="contact" id="contact">
+
 <div class="container">
 
 <div class="title">
-<small>CONTACT ME</small>
+
+<small>ارتباط با من</small>
+
 <h2>شروع مسیر یادگیری شما</h2>
-<p>جهت ثبت نام و اطلاعات بیشتر تماس بگیرید یا پیام دهید.</p>
+
+<p>
+جهت ثبت نام و اطلاعات بیشتر تماس بگیرید یا پیام دهید.
+</p>
+
 </div>
 
 <p>
 شماره تماس:
-<a href="tel:09045519325">۰۹۰۴۵۵۱۹۳۲۵</a>
+<a href="tel:09045519325">
+۰۹۰۴۵۵۱۹۳۲۵
+</a>
 </p>
 
 <br>
 
-<p>اینستاگرام و روبیکا: @french_rezaei</p>
+<p>
+اینستاگرام و روبیکا:
+<a href="https://www.instagram.com/french_rezaei/" target="_blank">
+@french_rezaei
+</a>
+</p>
 
 <br>
 
-<p>محل برگزاری کلاس‌ها: آموزشگاه زبان کیهان</p>
+<p>
+محل برگزاری کلاس‌ها:
+آموزشگاه زبان کیهان
+</p>
 
-<p>رفسنجان / بلوار امام علی / خیابان شهید خراسانی</p>
+<p>
+رفسنجان / بلوار امام علی / خیابان شهید خراسانی
+</p>
 
 <div class="social">
 
-<a href="tel:09045519325">تماس مستقیم</a>
+<a href="tel:09045519325">
+تماس مستقیم
+</a>
 
-<a href="https://www.instagram.com/french_rezaei/" target="_blank">Instagram</a>
+<a href="https://www.instagram.com/french_rezaei/" target="_blank">
+اینستاگرام
+</a>
 
-<a href="https://rubika.ir/french_rezaei" target="_blank">Rubika</a>
-
-<a href="https://wa.me/989045519325" target="_blank">WhatsApp</a>
+<a href="https://rubika.ir/french_rezaei" target="_blank">
+روبیکا
+</a>
 
 </div>
 
 </div>
+
 </section>
 
 
+<!-- FOOTER -->
+
 <footer>
-© 2026 Fatemeh Rezaei | French Language Education
+
+© 2026 Fatemeh Rezaei
+
 <br>
+
 تمامی حقوق محفوظ است.
+
 </footer>
 
+
+<!-- SMS -->
 
 <script>
 
@@ -667,20 +907,20 @@ function sendQuestion(e){
 
 e.preventDefault();
 
-let name=document.getElementById("name").value;
-let phone=document.getElementById("phone").value;
-let message=document.getElementById("message").value;
+let name = document.getElementById("name").value;
 
-let text=
-"سلام خانم رضایی 🌷"+
-"\nنام: "+name+
-"\nشماره تماس: "+phone+
-"\nسؤال: "+message;
+let phone = document.getElementById("phone").value;
 
-window.open(
-"https://wa.me/989045519325?text="+encodeURIComponent(text),
-"_blank"
-);
+let message = document.getElementById("message").value;
+
+let text =
+"سلام خانم رضایی\n" +
+"نام: " + name + "\n" +
+"شماره تماس: " + phone + "\n" +
+"سؤال: " + message;
+
+window.location.href =
+"sms:09045519325?body=" + encodeURIComponent(text);
 
 }
 
@@ -688,5 +928,3 @@ window.open(
 
 </body>
 </html>
-
-
