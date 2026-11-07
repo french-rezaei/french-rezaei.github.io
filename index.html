@@ -116,7 +116,29 @@ footer {
     <!-- عکس و معرفی -->
     <div class="profile">
 
-        <img src="fateme.jpg.png" alt="فاطمه رضایی">
+        <style>
+.profile-photo {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    outline: 2px solid #192b50;
+    box-shadow: 0 4px 15px rgba(10, 25, 60, 0.4);
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    transition: 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 15px #8faadc;
+}
+</style>
+
+<img src="fateme.jpg.png" alt="Fateme" class="profile-photo">
+💙 ترکیب رنگ:
 
         <h1>فاطمه رضایی</h1>
 
